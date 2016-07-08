@@ -1,0 +1,101 @@
+// cooking point custom style sheet
+
+//
+// navigation bar font and size
+//
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !default;
+@import url($web-font-path);
+
+.nav a {
+
+font-family: $font-family-cooking-point;
+font-size: $font-size-h4;
+
+}
+
+.btn {
+font-family: $font-family-cooking-point;
+}
+//
+// page slideshows
+//
+.cp-slideshow div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.cp-slideshow img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  @media (max-width: $screen-sm-max) {
+    width: auto;
+      }
+}
+
+p {
+	text-align: justify;
+}
+
+#cp-calendar {	
+	table {
+		width: 100%;
+	}
+	thead td {
+		font-weight:	bold;
+		text-align: 	right;
+	}
+	.month {
+		text-align: center;
+	}
+	.today {
+		color: $navbar-default-link-hover-color;
+		background-color: $navbar-default-link-hover-bg;
+	}
+	tbody td {
+		text-align: right;
+	}
+}
+
+#cp-week {
+	td, th {
+		text-align: center;
+	}
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+#cp-week-buttons {
+	p, button {
+		display: inline-block;	
+	}
+}
+
+.cp-day {
+	&:hover { 
+		background-color: $navbar-default-link-hover-bg; 
+	}
+	a {
+    	display:block;
+    	text-decoration:none;
+		text-align: center;
+	}
+}
+
+.ui-datepicker {
+	background-color: white;
+	padding: 1%;
+	border-color: gray;
+	border: 1px solid;
+	
+	table {
+		font-size: inherit;
+	}
+	.ui-datepicker-current-day {
+		background-color: $navbar-default-link-hover-bg;
+	}
+}

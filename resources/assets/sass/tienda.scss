@@ -1,0 +1,28 @@
+// TIENDA STYLE SHEET
+
+.boton-articulo, .boton-pagar {
+	padding: 8px;
+	margin: 4px;
+}
+
+.ticket {
+    font-family: "Courier New";
+    font-size: 125%;
+}
+
+@page { size:10cm 10cm; }
+
+@media print {
+
+  body * {
+    visibility: hidden;
+  }
+  .ticket, .ticket * {
+    visibility: visible;
+    font-size: 10pt ;
+    orphans: 0;
+    widows: 0; 
+    }
+  }
+
+}

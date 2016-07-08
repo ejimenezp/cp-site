@@ -1,0 +1,42 @@
+// cooking point style sheet
+
+//== Colors
+//
+$brand-primary:         #EF8401;
+$text-color: #000;
+
+//== Typography
+//
+$font-size-base:          14px;
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif ;
+$font-family-cooking-point:  "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+$font-family-base:        $font-family-sans-serif;
+
+$headings-font-family:    $font-family-cooking-point ;
+$buttons-font-family:    $font-family-cooking-point ;
+$font-size-h1:            ceil(($font-size-base * 1.5)) ; // ~26px
+$link-hover-decoration: none ;
+
+
+//
+//
+// grid system
+
+$container-large-desktop:	960px;
+
+
+// nav-bar customization
+
+$navbar-default-color:             $brand-primary;
+$navbar-default-bg:                #fff;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%);
+
+// Navbar links
+$navbar-default-link-color:                $brand-primary;
+$navbar-default-link-hover-color:          $brand-primary;
+$navbar-default-link-hover-bg:             darken($navbar-default-bg, 15%);
+$navbar-default-link-active-color:         $brand-primary;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 10%);
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
