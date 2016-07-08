@@ -15,7 +15,8 @@ config
 !/database/migrations
 node_modules
 phpunit.xml
-public/build
+/public/*
+!/public/images
 refs
 resources/lang/en
 server.php
@@ -23,3 +24,4 @@ storage
 tests
 vendor
 
+resources/assets/js/app.js
