@@ -6,21 +6,20 @@
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon-test.ico">
+        <link rel="canonical" href="{{ url()->current() }}">
         <link href="{{ elixir('css/app.css') }}" rel="stylesheet" type="text/css">     
         <script type='text/javascript' src='/js/app.js'></script>           
     </head>
     
     <body>
 	<div class="container">
-    <div class="row">   
-        <div class="col-md-12
-        ">
-<!--         </div> -->
-<!--         <div class="col-md-11"> -->
-                  <ul class="nav navbar-nav">
-                    <li>
-                         <img alt="cooking point logo" src="images/cookingpoint_logox113.png" href="../" />
-                  </li>
+    <div class="row no-gutter">   
+        <div class="col-md-1">
+          <img alt="cooking point logo" src="images/cookingpoint_logox113.png" href="../" />
+        </div> 
+        <div class="col-md-11">
+              <ul class="vertical-center nav navbar-nav">
                   <li>
                       <a href="/">Home</a>
                     </li>
@@ -50,12 +49,12 @@
                                     <li>
                     <a href="events">FAQ</a>
                   </li>
-                  
-                </div>
+              </ul> 
+            </div>
               </div>
         </div>
         </div>
-        </div> 
+        
 
         @if (isset($page) && $page == 'home')
 			<div class="container">

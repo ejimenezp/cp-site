@@ -7,16 +7,38 @@
 $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !default;
 @import url($web-font-path);
 
-.nav a {
+.nav {
 
-font-family: $font-family-cooking-point;
-font-size: $font-size-h4;
+	padding-left: 25px;
+	
+	a {
 
+		font-family: $font-family-cooking-point;
+		font-size: $font-size-h4;
+	}	
+}
+
+.vertical-center {
+		position: relative;
+		top: 40px;
+		transform: translateY(-50%);
+}
+
+
+.no-gutter > [class*='col-'] {
+	    padding-right:0;
+	    padding-left:0	
 }
 
 .btn {
-font-family: $font-family-cooking-point;
+	font-family: $font-family-cooking-point;
 }
+
+.big-size {
+	font-size: 38px;
+}
+
+
 //
 // page slideshows
 //

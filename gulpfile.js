@@ -15,6 +15,11 @@ var git = require('gulp-git');
  |
  */
 
+gulp.task( 'scss', function (mix) {
+    return elixir(function(mix) {
+    mix.sass('app.scss').version('css/app.css')});
+});
+
 elixir(function(mix) {
     mix.sass('app.scss').version('css/app.css')
     .browserify('app.js')
@@ -48,6 +53,11 @@ var tienda_files = [
     'resources/views/tienda/masterlayout.blade.php'
 ];
 
+var pages_files = [
+    'app/Http/routes.php',
+    'public/build/css/app**css',
+    'public/build/rev-manifest.json'
+];
 
 gulp.task( 'git-tienda', function () {
     return gulp.src( tienda_files )
