@@ -30,12 +30,34 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !defaul
 	    padding-left:0	
 }
 
+.home-column {
+	overflow: hidden;
+}
+
+.dropcap { 
+	float: left; 
+	line-height: 40px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+ }
+
+.divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
 .btn {
 	font-family: $font-family-cooking-point;
 }
 
 .big-size {
 	font-size: 38px;
+	color: #e42e28;
 }
 
 

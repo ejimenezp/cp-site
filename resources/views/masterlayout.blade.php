@@ -8,17 +8,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon-test.ico">
         <link rel="canonical" href="{{ url()->current() }}">
+        <style type="text/css">
+            ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                }
+        </style>  
         <link href="{{ elixir('css/app.css') }}" rel="stylesheet" type="text/css">     
-        <script type='text/javascript' src='/js/app.js'></script>           
+        <script type='text/javascript' src='/js/app.js'></script>
+
     </head>
     
     <body>
 	<div class="container">
     <div class="row no-gutter">   
-        <div class="col-md-1">
-          <img alt="cooking point logo" src="images/cookingpoint_logox113.png" href="../" />
+        <div class="col-sm-1">
+          <a href="/"><img alt="cooking point logo" src="images/cookingpoint_logox113.png" href="../" /></a>
         </div> 
-        <div class="col-md-11">
+        <div class="col-sm-11">
               <ul class="vertical-center nav navbar-nav">
                   <li>
                       <a href="/">Home</a>
@@ -64,11 +72,11 @@
         @else
 			<div class="container">
                 <div class="row">
-         			<div class="col-md-9">
+         			<div class="col-sm-9">
         			     @yield('content') 
         			     @yield('footer')
             		</div>   		
-            		<div class="col-md-3">
+            		<div class="col-sm-3">
                          @include('sidebar')
             		</div>
                 </div>

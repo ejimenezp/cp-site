@@ -15,10 +15,6 @@ var git = require('gulp-git');
  |
  */
 
-gulp.task( 'scss', function (mix) {
-    return elixir(function(mix) {
-    mix.sass('app.scss').version('css/app.css')});
-});
 
 elixir(function(mix) {
     mix.sass('app.scss').version('css/app.css')

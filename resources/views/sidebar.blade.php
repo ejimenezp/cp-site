@@ -4,12 +4,12 @@
 					<ul id="lwK4N9En0T" class="TA_links MY7P95ZvGhdS">
 						<li id="CwWgjrL1phgi" class="jDXQBKNFKMX"><a target="_blank"
 							href="http://www.tripadvisor.com/Attraction_Review-g187514-d4888426-Reviews-Cooking_Point-Madrid.html"><img
-								src="http://www.tripadvisor.com/img/cdsi/img2/awards/CoE2015_WidgetAsset-14348-2.png"
+								src="http://www.tripadvisor.com/img/cdsi/img2/awards/CoE2016_WidgetAsset-14348-2.png"
 								alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO" /></a></li>
 					</ul>
 				</div>
 				<script
-					src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=772&amp;locationId=4888426&amp;lang=en_US&amp;year=2015&amp;display_version=2"></script>
+					src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=772&amp;locationId=4888426&amp;lang=en_US&amp;year=2016&amp;display_version=2"></script>
 			</div>
 			<div class="row">
 				<div id="TA_selfserveprop520" class="TA_selfserveprop">
