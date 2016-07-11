@@ -2,7 +2,7 @@
  * 
  */
 window.$ = window.jQuery = require('jquery')
-require('bootstrap-sass');
+require('bootstrap-sass'); // needed for menu drop-down
 
 ///
 /// jquery for page slideshows

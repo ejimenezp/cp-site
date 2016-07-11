@@ -52,19 +52,35 @@ var tienda_files = [
 var pages_files = [
     'app/Http/routes.php',
     'public/build/css/app**css',
-    'public/build/rev-manifest.json'
+    'public/build/rev-manifest.json',
+    'public/images/**jpg',
+    'public/images/**png',
+    'public/js/app.js',
+    'public/favicon.ico',
+    'public/favicon-test.ico',
+    'resources/views/masterlayout.blade.php',
+    'resources/views/pages/classes.blade.php',
+    'resources/views/pages/events.blade.php',
+    'resources/views/pages/home.blade.php',
+    'resources/views/sidebar.blade.php'
 ];
 
-gulp.task( 'git-tienda', function () {
-    return gulp.src( tienda_files )
-        .pipe(git.add());
-});
+gulp.task( 'deploy-pages', function () {
+
+    var destFolder = '/laravel/test_bs2';
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( pages_files, { base: '.', buffer: false } )
+        .pipe( conn.newer( destFolder ) ) // only upload newer files
+        .pipe( conn.dest( destFolder ) );
+} );
 
 
 gulp.task( 'deploy-tienda', function () {
 
-
-    var destFolder = '/test_bs';
+    var destFolder = '/laravel/test_bs2';
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance

@@ -19,6 +19,7 @@
 Route::get('/', function () { return view('pages.home', ['page' => 'home']); });
 Route::get('classes', function () { return view('pages.classes'); });
 Route::get('private-cooking-events-madrid-spain', function () { return view('pages.events'); });
+Route::get('classes-paella-cooking-madrid-spain', function () { return view('pages.paella'); });
 
 // ADMIN main page
 // Route::get('admin/calendar', 'CalendarEventsController@show_today'); // OK
