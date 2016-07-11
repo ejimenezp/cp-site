@@ -10,12 +10,22 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !defaul
 .nav {
 
 	padding-left: 25px;
+	z-index: 1000;
 	
 	a {
 
 		font-family: $font-family-cooking-point;
 		font-size: $font-size-h4;
 	}	
+}
+
+h1, .call-to-action {
+	color: $brand-red;
+
+	.what {
+		text-align: right;
+		font-weight: bold;
+	}
 }
 
 .vertical-center {
@@ -32,6 +42,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !defaul
 
 .home-column {
 	overflow: hidden;
+	padding-bottom: 15px;
 }
 
 .dropcap { 

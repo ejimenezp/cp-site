@@ -62,6 +62,7 @@ var pages_files = [
     'resources/views/pages/classes.blade.php',
     'resources/views/pages/events.blade.php',
     'resources/views/pages/home.blade.php',
+    'resources/views/pages/paella.blade.php',
     'resources/views/sidebar.blade.php'
 ];
 

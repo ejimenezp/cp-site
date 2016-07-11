@@ -12,7 +12,7 @@
             <div><img src="images/slider-paella-03.jpg" ></div>
             <div><img src="images/slider-paella-04.jpg" ></div>
             <div><img src="images/slider-paella-05.jpg" ></div>
-    </div>
+	</div>
 </div>
 
 
@@ -42,18 +42,31 @@
 		<p>Class is subject to a minimum attendance of 2 people.</p>
 
 	</div>
+	<div class="divider"></div>
 
 </div>
 
-<div class="row">
-	<div class="col-sm-10 col-sm-offset-1">
-		<div class="text-center call-to-action">
-			<div style="font-size:50px;">
-				<a href="mailto:info@cookingpoint.es" target="_top"><span class="glyphicon glyphicon-envelope"></span></a>
-			</div>
-			<h6>Email us at <a href="mailto:info@cookingpoint.es" target="_top">info@cookingpoint.es</a> and we’ll design the event that best fit your needs.</h6>
-		</div>
+<div class="row call-to-action">
+	<div class="col-xs-1 vertical-center">
+		<img class="text-center" src="images/info-sign.png">
+	</div>
+	<div class="col-xs-2 what">
+		When:<br/>
+		Time:<br/>
+		Price:<br/>
+		Includes:<br/><br/>
+	</div>
+	<div class="col-xs-9">
+		Monday to Saturday<br/>
+		10 am - 2 pm<br/>
+		€70 adult / €35 children (5-12 yo)<br/>
+		market tour, ingredients, cooking class, recipes, lunch and drinks<br/><br/>
 	</div>
 </div>
+
+<div class="row text-center call-to-action">
+	<a href="#" class="btn btn-primary">Book Now</a>
+</div>
+
 
 @stop
