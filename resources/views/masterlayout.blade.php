@@ -31,7 +31,7 @@
                   <a href="/">Home</a>
                 </li>
               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="classes" id="themes">Classes <span class="caret"></span></a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" id="themes">Classes <span class="caret"></span></a>
                   <ul class="dropdown-menu" aria-labelledby="themes">
                     <li><a href="classes-paella-cooking-madrid-spain">Paella Cooking Class</a></li>
                     <li><a href="../cerulean/">Wine Tasting</a></li>

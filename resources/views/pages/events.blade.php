@@ -40,15 +40,28 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-sm-10 col-sm-offset-1">
-		<div class="text-center call-to-action">
-			<div style="font-size:50px;">
-				<a href="mailto:info@cookingpoint.es" target="_top"><span class="glyphicon glyphicon-envelope"></span></a>
-			</div>
-			<h6>Email us at <a href="mailto:info@cookingpoint.es" target="_top">info@cookingpoint.es</a> and we’ll design the event that best fit your needs.</h6>
-		</div>
+<div class="divider"></div>
+
+<div class="row call-to-action">
+	<div class="col-xs-1 vertical-center">
+		<img class="text-center" src="images/info-sign.png">
 	</div>
+	<div class="col-xs-2 what">
+		When:<br/>
+		Duration:<br/>
+		Price:<br/>
+		Includes:<br/><br/>
+	</div>
+	<div class="col-xs-9">
+		On Request<br/>
+		3 hours (recommended)<br/>
+		Ask for a quotation (we’ll design the event that best fit your needs)<br/>
+		Cooking class, recipes, lunch and drinks<br/><br/>
+	</div>
+</div>
+
+<div class="row text-center call-to-action">
+	<a href="mailto:info@cookingpoint.es" class="btn btn-primary">Email Us</a>
 </div>
 
 @stop
