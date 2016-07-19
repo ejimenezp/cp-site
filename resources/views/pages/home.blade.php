@@ -14,7 +14,7 @@
             <div><img src="images/slider-home-01.jpg" ></div>
     </div>
     <h1 style="text-align: center;"><span style="color: #000000;"><strong>Wondering what to do in Madrid?</strong></span></h1>
-    <h1 style="text-align: center;"><span class="big-size" style="color: #e42e28;">Enjoy a <strong><span style="color: #ef8401;">cooking class</span></strong> during your stay</span></h1>
+    <h1 style="text-align: center;"><span class="home-headline" style="color: #e42e28;">Enjoy a <strong><span style="color: #ef8401;">cooking class</span></strong> during your stay</span></h1>
 </div>
 
 <div class="row text-center">
@@ -63,7 +63,7 @@
 
 <div class="row">
     <div class="col-sm-6">
-        <p><span class="dropcap big-size">L</span>ike in any other big city, you will find many things to do in Madrid: museums, monuments, markets, restaurants, bars, parks,... the number of Madrid attractions is countless. But, when it comes to what to do, you shouldn't miss the opportunity to take an active role in your Madrid experience and participate on attractions where five senses are involved.</p>
+        <p><span class="dropcap home-headline">L</span>ike in any other big city, you will find many things to do in Madrid: museums, monuments, markets, restaurants, bars, parks,... the number of Madrid attractions is countless. But, when it comes to what to do, you shouldn't miss the opportunity to take an active role in your Madrid experience and participate on attractions where five senses are involved.</p>
         <p>Because of its central location, Madrid receives influences from every corner of Spain, what has made of it the best city to learn Spanish cuisine. The Madridian open and conciliatory character will let you discover Spanish wine and food excellences no matter their region of origin.</p>   
     </div>
     <div class="col-sm-6">
@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<style>
+{{-- <style>
     .google-maps {
         position: relative;
         padding-bottom: 33%; // This is the aspect ratio
@@ -90,5 +90,9 @@
 <div class="google-maps">
 <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.840368337607!2d-3.6974950000000173!3d40.412387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422629f0ad9215%3A0xbfa70f0e9ca1618!2sCooking+Point!5e0!3m2!1ses!2ses!4v1399652339472" height="305" width="960" frameborder="0"></iframe>
 </div>
-&nbsp;
+&nbsp; --}}
+
+<div class="cp-slideshow">
+    <a href="https://www.google.com/maps/place/Cooking+Point/@40.412387,-3.697495,15z/data=!4m5!3m4!1s0x0:0xbfa70f0e9ca1618!8m2!3d40.4123866!4d-3.6974954?hl=en" target="_blank"><img src="/images/plano-web.png" /></a>
+</div>
 @stop

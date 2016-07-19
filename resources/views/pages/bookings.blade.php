@@ -1,24 +1,13 @@
 @extends('masterlayout')
 
-@section('title', 'Paella cooking in Madrid: Spanish cooking classes in English')
-@section('description', 'Cooking School in Madrid, Spain: learn how to cook paella in English. Spanish Cooking for tourists on paella, gazpacho and tapas')
+@section('title', 'Booking Form for Cooking School Madrid, Spain: Spanish cuisine courses')
+@section('description', 'Cooking courses school schedules and contact form: cooking classes calendar in madrid, Spain. Plan your cooking school vacations.')
 
 @section('content')
 
 <div class="row">
-    <div class="cp-slideshow">
-            <div style="display: inline-block;"><img src="images/slider-paella-02.jpg" ></div>
-            <div><img src="images/slider-paella-01.jpg" ></div>
-            <div><img src="images/slider-paella-03.jpg" ></div>
-            <div><img src="images/slider-paella-04.jpg" ></div>
-            <div><img src="images/slider-paella-05.jpg" ></div>
-	</div>
-</div>
-
-
-<div class="row">
 	<div class="col-sm-12">
-		<h1>Paella Cooking Class</h1>
+		<h1>Bookings</h1>
 	</div>
 </div>
 
@@ -47,10 +36,10 @@
 </div>
 
 <div class="row call-to-action">
-	<div class="col-xs-12 col-sm-1 vertical-center text-center">
- 		<i class="brand-red fa fa-4x fa-info-circle"></i><br/>
+	<div class="col-xs-1 vertical-center">
+		<img class="text-center" src="images/info-sign.png">
 	</div>
-	<div class="col-xs-3 col-sm-2 what">
+	<div class="col-xs-2 what">
 		When:<br/>
 		Time:<br/>
 		Price:<br/>
@@ -65,7 +54,7 @@
 </div>
 
 <div class="row text-center call-to-action">
-	<a href="bookings" class="btn btn-primary">Book Now</a>
+	<a href="#" class="btn btn-primary">Book Now</a>
 </div>
 
 

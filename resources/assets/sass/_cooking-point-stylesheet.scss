@@ -10,7 +10,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !defaul
 .nav {
 
 	padding-left: 25px;
-	z-index: 1000;
+	z-index: 1;
 	
 	a {
 
@@ -21,6 +21,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !defaul
 
 h1, .call-to-action {
 	color: $brand-red;
+
+	.no-link a:link {
+		color: $brand-red;
+	}
 
 	.what {
 		text-align: right;
@@ -62,15 +66,27 @@ h1, .call-to-action {
   background-color: #e5e5e5;
 }
 
+.primary-color {
+	color: $brand-primary;
+}
+
+.home-headline {
+	font-size: 38px;
+	color: $brand-red;
+}
+
 .btn {
 	font-family: $font-family-cooking-point;
 }
 
-.big-size {
-	font-size: 38px;
-	color: #e42e28;
+.sidebar-title {
+	color: #959595;
+	letter-spacing: 1px;
+	font-size: 12px;
+	font-weight: 700;
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
 }
-
 
 //
 // page slideshows
@@ -146,6 +162,8 @@ p {
 	padding: 1%;
 	border-color: gray;
 	border: 1px solid;
+	z-index: 100;
+
 	
 	table {
 		font-size: inherit;

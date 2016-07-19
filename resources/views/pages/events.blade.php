@@ -43,20 +43,20 @@
 <div class="divider"></div>
 
 <div class="row call-to-action">
-	<div class="col-xs-1 vertical-center">
-		<img class="text-center" src="images/info-sign.png">
+	<div class="col-xs-12 col-sm-1 vertical-center text-center">
+ 		<i class="brand-red fa fa-4x fa-info-circle"></i><br/>
 	</div>
-	<div class="col-xs-2 what">
+	<div class="col-xs-3 col-sm-2 what">
 		When:<br/>
-		Duration:<br/>
+		Time:<br/>
 		Price:<br/>
 		Includes:<br/><br/>
 	</div>
 	<div class="col-xs-9">
 		On Request<br/>
-		3 hours (recommended)<br/>
-		Ask for a quotation (we’ll design the event that best fit your needs)<br/>
-		Cooking class, recipes, lunch and drinks<br/><br/>
+		3 hours (recommended), in the morning or evening<br/>
+		Ask for a quotation<br/>
+		Cooking class, recipes, lunch or dinner and drinks<br/><br/>
 	</div>
 </div>
 

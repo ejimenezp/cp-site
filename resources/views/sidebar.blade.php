@@ -1,8 +1,9 @@
 <div class="row text-center">
-          <a href="https://www.tripadvisor.com/Attraction_Review-g187514-d4888426-Reviews-Cooking_Point-Madrid.html"><img alt="tripadvisor certificate of excellence" src="images/tripadvisorCE.png" /></a>
+<div class="sidebar-title">SEE OUR REVIEWS ON TRIPADVISOR</div>
+          <a href="https://www.tripadvisor.com/Attraction_Review-g187514-d4888426-Reviews-Cooking_Point-Madrid.html"><img alt="tripadvisor certificate of excellence" src="/images/tripadvisorCE.png" /></a>
 </div>
 
-<div class="row">
+<div class="row text-center">
 	<div id="TA_selfserveprop520" class="TA_selfserveprop">
  		<ul id="3d3bqaZrk" class="TA_links 5q8tCIzP">
 			<li id="Ihzogw09uTQ" class="7Br3uJEh"><a target="_blank"
@@ -16,26 +17,12 @@
 	</script>
 </div>
 
-<div class="row">
-<font color="ef8401"><center>
-		<i class="fa fa-envelope"></i><a
-			href="mailto:info@cookingpoint.es" target="_top">
-			info@cookingpoint.es</a></br> <i class="fa fa-phone"></i> (+34)
-		910 115 154 </br></font>
-</center>
-<br>
-<center>
-	<font color="e42e28"><strong>Calle de Moratin, 11 28014 Madrid</strong></font>
-</center>
-<br>
-<center>
-	<i class="fa fa-question"></i> <a
-		href="http://www.cookingpoint.es/faq/"><font color="e42e28">Frequently
-			Asked Questions</font></a>
-</center>
-<iframe
-	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.840368337607!2d-3.6974950000000173!3d40.412387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422629f0ad9215%3A0xbfa70f0e9ca1618!2sCooking+Point!5e0!3m2!1sen!2s!4v1433584034137"
-	width="250" height="250" frameborder="0" style="border: 0"></iframe>
+<div class="row text-center">
+
+<div class="sidebar-title"><br/>OUR LOCATION</div>
+
+<a href="https://www.google.com/maps/place/Cooking+Point/@40.412387,-3.697495,15z/data=!4m5!3m4!1s0x0:0xbfa70f0e9ca1618!8m2!3d40.4123866!4d-3.6974954?hl=en" target="_blank"><img src="/images/plano-sidebar.png" /></a>
+
 </div>
 			<div class="row">
 				<div class="follow-us-en">

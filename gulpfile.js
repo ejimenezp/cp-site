@@ -23,6 +23,8 @@ elixir(function(mix) {
     .browserify('admin-activity.js')
     .browserify('admin-calendarevent.js')
     .browserify('tienda.js')
+    .browserify('legacy/cp-scripts.js')
+    .task('fonts')
 
 });
 
@@ -90,3 +92,8 @@ gulp.task( 'deploy-tienda', function () {
         .pipe( conn.newer( destFolder ) ) // only upload newer files
         .pipe( conn.dest( destFolder ) );
 } );
+
+gulp.task('fonts', function() {
+   gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/*.{ttf,woff,eot,svg,woff2}')
+   .pipe(gulp.dest('public/build/fonts/bootstrap'))
+});
