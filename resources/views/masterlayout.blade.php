@@ -22,44 +22,94 @@
     
   <body>
 	<div class="container">
-    <div class="row no-gutter">   
-        <div class="col-xs-4 col-sm-1">
-          <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox113.png" /></a>
-        </div> 
-        <div class="col-xs-8 col-sm-11">
-          <ul class="vertical-center nav navbar-nav">
-              <li>
-                  <a href="/">Home</a>
-                </li>
-              <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" id="themes">Classes <span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelledby="themes">
-                    <li><a href="/classes-paella-cooking-madrid-spain">Paella Cooking Class</a></li>
-                    <li><a href="/wine-tasting-madrid-spain">Wine Tasting</a></li>
-                    <li><a href="/classes-spanish-tapas-madrid-spain">Tapas Cooking Class</a></li>
-                  </ul>
-              </li>
-              <li>
-                <a href="/private-cooking-events-madrid-spain">Events</a>
-              </li>
-              <li>
-                <a href="/school-madrid-spain">The School</a>
-              </li>
-                                <li>
-                <a href="/gallery">Gallery</a>
-              </li>
-                                <li>
-                <a href="/bookings">Bookings</a>
-              </li>
-                                <li>
-                <a href="/contact">Contact</a>
-              </li>
-                                <li>
-                <a href="/faq">FAQ</a>
-              </li>
-          </ul> 
-        </div>
+
+    <div class="visible-xs">
+      <div class="row ">   
+          <div class="col-xs-3">
+            <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox75.png" /></a>
+          </div> 
+          <div class="col-xs-9">
+            <div class="text-right" data-toggle="collapse" data-target="#navbar">
+              <h1>Menu <i class="fa fa-bars" aria-hidden="true"></i></h1>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a href="/">Home</a>
+                    </li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" id="themes">Classes <span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelledby="themes">
+                        <li><a href="/classes-paella-cooking-madrid-spain">Paella Cooking Class</a></li>
+                        <li><a href="/wine-tasting-madrid-spain">Wine Tasting</a></li>
+                        <li><a href="/classes-spanish-tapas-madrid-spain">Tapas Cooking Class</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="/private-cooking-events-madrid-spain">Events</a>
+                  </li>
+                  <li>
+                    <a href="/school-madrid-spain">The School</a>
+                  </li>
+                                    <li>
+                    <a href="/gallery">Gallery</a>
+                  </li>
+                                    <li>
+                    <a href="/bookings">Bookings</a>
+                  </li>
+                                    <li>
+                    <a href="/contact">Contact</a>
+                  </li>
+                                    <li>
+                    <a href="/faq">FAQ</a>
+                  </li>
+              </ul> 
+            </div>
+          </div>
+      </div>       
     </div>
+
+    <div class="visible-sm visible-md visible-lg">
+      <div class="row no-gutter">   
+          <div class="col-sm-1">
+            <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox113.png" /></a>
+          </div> 
+          <div class="col-sm-11">
+            <ul class="vertical-center nav navbar-nav">
+                <li>
+                    <a href="/">Home</a>
+                  </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="themes">Classes <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="themes">
+                      <li><a href="/classes-paella-cooking-madrid-spain">Paella Cooking Class</a></li>
+                      <li><a href="/wine-tasting-madrid-spain">Wine Tasting</a></li>
+                      <li><a href="/classes-spanish-tapas-madrid-spain">Tapas Cooking Class</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="/private-cooking-events-madrid-spain">Events</a>
+                </li>
+                <li>
+                  <a href="/school-madrid-spain">The School</a>
+                </li>
+                                  <li>
+                  <a href="/gallery">Gallery</a>
+                </li>
+                                  <li>
+                  <a href="/bookings">Bookings</a>
+                </li>
+                                  <li>
+                  <a href="/contact">Contact</a>
+                </li>
+                                  <li>
+                  <a href="/faq">FAQ</a>
+                </li>
+            </ul> 
+          </div>
+      </div>      
+    </div>
+
   </div>
         
 @if (isset($page) && ($page == 'home' || $page == 'contact'))
