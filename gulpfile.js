@@ -83,7 +83,18 @@ var pages_files = [
     'resources/views/pages/tapas.blade.php',
     'resources/views/pages/wine.blade.php',
     'resources/views/sidebar.blade.php',
-    'resources/views/tpv/pay.blade.php'    
+    'resources/views/tpv/pay.blade.php',
+    'storage/app/legacy/admin_notice_CR.html',
+    'storage/app/legacy/admin_notice_PA.html',
+    'storage/app/legacy/booking_details.html',
+    'storage/app/legacy/status_CR.html',
+    'storage/app/legacy/status_CR.txt',
+    'storage/app/legacy/status_PA.html',
+    'storage/app/legacy/status_PA.txt',
+    'storage/app/legacy/status_PE.html',
+    'storage/app/legacy/status_PE.txt'
+
+
 ];
 
 gulp.task( 'deploy-pages', function () {
