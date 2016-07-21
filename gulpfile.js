@@ -37,8 +37,8 @@ var conn = ftp.create( {
     } );
 
 var tienda_files = [
-    'app/Http/routes.php',
     'app/Http/Controllers/TicketsController.php',
+    'app/Http/routes.php',
     'app/TiendaArticulo.php',
     'app/TiendaVentas.php',
     'database/migrations/**create_table_tienda_ventas.php',
@@ -52,7 +52,13 @@ var tienda_files = [
 ];
 
 var pages_files = [
+    'app/Http/Controllers/Legacy/LegacyController.php',
+    'app/Http/Controllers/Legacy/LegacyMail.php',
+    'app/Http/Controllers/Legacy/LegacyModel.php',
+    'app/Http/Controllers/RedsysAPI.php',
+    'app/Http/Controllers/TPVController.php',
     'app/Http/routes.php',
+    'config/cooking-point.php',
     'public/build/css/app**css',
     'public/build/rev-manifest.json',
     'public/images/**jpg',
@@ -60,12 +66,23 @@ var pages_files = [
     'public/js/app.js',
     'public/favicon.ico',
     'public/favicon-test.ico',
+    'public/legacy/admin/*',
+    'resources/views/legacy/emptyform.blade.php',
+    'resources/views/legacy/filledform.blade.php',
     'resources/views/masterlayout.blade.php',
+    'resources/views/pages/bookings.blade.php',
     'resources/views/pages/classes.blade.php',
+    'resources/views/pages/contact.blade.php',
     'resources/views/pages/events.blade.php',
+    'resources/views/pages/faq.blade.php',
+    'resources/views/pages/gallery.blade.php',
     'resources/views/pages/home.blade.php',
     'resources/views/pages/paella.blade.php',
-    'resources/views/sidebar.blade.php'
+    'resources/views/pages/school.blade.php',
+    'resources/views/pages/tapas.blade.php',
+    'resources/views/pages/wine.blade.php',
+    'resources/views/sidebar.blade.php',
+    'resources/views/tpv/pay.blade.php'    
 ];
 
 gulp.task( 'deploy-pages', function () {

@@ -29,16 +29,16 @@
             <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox75.png" /></a>
           </div> 
           <div class="col-xs-9">
-            <div class="text-right" data-toggle="collapse" data-target="#navbar">
+            <a class="text-right" data-toggle="collapse" data-target="#navbar" href="#">
               <h1>Menu <i class="fa fa-bars" aria-hidden="true"></i></h1>
-            </div>
+            </a>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                   <li>
                       <a href="/">Home</a>
                     </li>
                   <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" id="themes">Classes <span class="caret"></span></a>
+                      <a class="dropdown-toggle" data-toggle="dropdown" id="themes" href="#">Classes <i class="fa fa-caret-down"></i></a>
                       <ul class="dropdown-menu" aria-labelledby="themes">
                         <li><a href="/classes-paella-cooking-madrid-spain">Paella Cooking Class</a></li>
                         <li><a href="/wine-tasting-madrid-spain">Wine Tasting</a></li>
