@@ -140,7 +140,7 @@
 
     <div class="primary-color">
       <div class="pull-left" style="padding-top:1.6em;">© Cooking Point, SL</div>
-      <div class="pull-right">Follow us in:
+      <div class="pull-right">Follow us on:
         <a href="https://www.facebook.com/CookingPointSpain" title="facebook" target="_blank"><i class="fa fa-3x fa-facebook-official"></i></a>
         &nbsp;
         <a href="https://google.com/+CookingPointMadrid" title="google plus" target="_blank"><i class="fa fa-3x fa-google-plus-square"></i></a>
