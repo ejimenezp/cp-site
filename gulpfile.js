@@ -64,6 +64,7 @@ var pages_files = [
     'public/images/**jpg',
     'public/images/**png',
     'public/js/app.js',
+    'public/js/cp-scripts.js',
     'public/favicon.ico',
     'public/favicon-test.ico',
     'public/legacy/admin/*',
