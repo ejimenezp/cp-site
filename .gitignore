@@ -26,6 +26,9 @@
 /resources/lang/en
 /resources/views/vendor
 /server.php
-/storage
+/storage/*
+!/storage/app
+/storage/app/*
+!/storage/app/legacy
 /tests
 /vendor

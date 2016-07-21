@@ -1,0 +1,23 @@
+Dear CP_FIRSTNAME,
+
+Thank you for your inquiry. We'll get back to you as soon as we check the availability.
+
+INQUIRY DETAILS:
+
+- Name: CP_NAME
+- Email: CP_EMAIL
+- Phone: CP_PHONE
+- Activity: CP_ACTIVITY
+- Date: CP_ACTDATE
+- Adults: CP_NUMADULTS
+- Children: CP_NUMCHILDREN
+- Price: CP_PRICE
+- Food Restrictions: CP_FOODRESTRICTIONS
+- Comments: CP_COMMENTS
+
+Status: CP_STATUS
+
+---
+Cooking Point
+(+34) 910 115 154
+www.cookingpoint.es

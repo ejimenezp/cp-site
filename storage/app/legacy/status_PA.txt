@@ -1,0 +1,35 @@
+Dear CP_FIRSTNAME,
+
+Your booking is confirmed. We are looking forward to meeting you. Find details and directions below.
+
+BOOKING DETAILS:
+
+- Name: CP_NAME
+- Email: CP_EMAIL
+- Phone: CP_PHONE
+- Activity: CP_ACTIVITY
+- Date: CP_ACTDATE
+- Adults: CP_NUMADULTS
+- Children: CP_NUMCHILDREN
+- Price: CP_PRICE
+- Food Restrictions: CP_FOODRESTRICTIONS
+- Comments: CP_COMMENTS
+
+Status: CP_STATUS
+
+
+MEETING POINT:
+
+Cooking Point
+Calle de Moratin, 11 28014 Madrid
+tel. +34910115154
+
+Should you have any question, please let us know.
+
+Thank you,
+cooking point team
+---
+Cooking Point
+(+34) 910 115 154
+www.cookingpoint.es
+
