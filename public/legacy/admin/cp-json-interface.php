@@ -86,7 +86,7 @@ function tpv_log($hash)
 				ds_response,
 				ds_authorization,
 				ds_last_update
-		FROM tpv_log WHERE ds_data='$hash' ORDER BY ds_last_update ASC";
+		FROM legacy_tpv_log WHERE ds_data='$hash' ORDER BY ds_last_update ASC";
 
 	if(!$result = $db->query($sqlString))
 	{
