@@ -7,18 +7,18 @@
 
 <div class="row">
     <div class="cp-slideshow">
-            <div style="display: inline-block;"><img src="images/slider-home-05.jpg" ></div>
-            <div><img src="images/slider-home-031.jpg" ></div>
-            <div><img src="images/slider-home-021.jpg" ></div>
-            <div><img src="images/slider-home-042.jpg" ></div>
-            <div><img src="images/slider-home-01.jpg" ></div>
+            <div style="display: inline-block;"><img src="/images/slider-home-05.jpg" ></div>
+            <div><img src="/images/slider-home-031.jpg" ></div>
+            <div><img src="/images/slider-home-021.jpg" ></div>
+            <div><img src="/images/slider-home-042.jpg" ></div>
+            <div><img src="/images/slider-home-01.jpg" ></div>
     </div>
     <h1 style="text-align: center;"><span style="color: #000000;"><strong>Wondering what to do in Madrid?</strong></span></h1>
     <h1 style="text-align: center;"><span class="home-headline" style="color: #e42e28;">Enjoy a <strong><span style="color: #ef8401;">cooking class</span></strong> during your stay</span></h1>
 </div>
 
 <div class="row text-center">
-          <a href="https://www.tripadvisor.com/Attraction_Review-g187514-d4888426-Reviews-Cooking_Point-Madrid.html"><img alt="tripadvisor certificate of excellence" src="images/tripadvisorCE.png" /></a>
+          <a href="https://www.tripadvisor.com/Attraction_Review-g187514-d4888426-Reviews-Cooking_Point-Madrid.html"><img alt="tripadvisor certificate of excellence" src="/images/tripadvisorCE.png" /></a>
 </div>
 
 
@@ -32,7 +32,7 @@
 <div class="row">
 
     <div class="col-sm-4 home-column">
-        <a href="classes-paella-cooking-madrid-spain"><img class="img-responsive center-block" alt="paella cooking class in Madrid, Spain" src="images/home-en-paella.jpg" /></a>
+        <a href="classes-paella-cooking-madrid-spain"><img class="img-responsive center-block" alt="paella cooking class in Madrid, Spain" src="/images/home-en-paella.jpg" /></a>
         <h1><a href="classes-paella-cooking-madrid-spain">Paella Cooking Class</a></h1>
         <p>Learn in our cooking classes how to cook the most famous Spanish dish: Paella (a rice based dish with seafood. meat and vegetables). Following the instructions of our chef, you will prepare your own full menu consisting of paella, gazpacho (cold tomato soup) and sangria.</p>
         <div class="text-center">
@@ -43,7 +43,7 @@
     <div class="divider visible-xs"></div>
 
     <div class="col-sm-4 home-column">
-           <a href="wine-tasting-madrid-spain"><img class="img-responsive center-block" title="wine tasting madrid cooking school" alt="wine tasting class in Madrid, Spain" src="images/home-en-cata.jpg" /></a>
+           <a href="wine-tasting-madrid-spain"><img class="img-responsive center-block" title="wine tasting madrid cooking school" alt="wine tasting class in Madrid, Spain" src="/images/home-en-cata.jpg" /></a>
         <h1><a href="wine-tasting-madrid-spain">Wine Tasting</a></h1>
         <p>Discover why Spain is leader in wine quality. Our wine tasting concept is led by our somellier who will teach you how to appreaciate its aromas and flavors. Taste and discover an important part of the Spanish culture through its vineyards and type of grapes!</p>
         <div class="text-center">
@@ -54,7 +54,7 @@
     <div class="divider visible-xs"></div>
 
     <div class="col-sm-4 home-column">
-            <a href="classes-spanish-tapas-madrid-spain"><img class="img-responsive center-block" title="spanish cooking school in madrid" alt="cooking school madrid spain" src="images/home-en-tapas.jpg" /></a>
+            <a href="classes-spanish-tapas-madrid-spain"><img class="img-responsive center-block" title="spanish cooking school in madrid" alt="cooking school madrid spain" src="/images/home-en-tapas.jpg" /></a>
         <h1><a href="classes-spanish-tapas-madrid-spain">Tapas Cooking Class</a></h1>
         <p>The Spanish word "tapas" refers to nearly any food in bite-size pieces, served in small plates to share by a group of friends or family. In our Spanish tapas cooking class you will learn to prepare up to 6 traditional tapas, ranging from Spanish potato omelet to shrimps with garlic, all of them typical from different regions of Spain.</p>
         <div class="text-center">

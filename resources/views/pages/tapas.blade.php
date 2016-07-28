@@ -7,11 +7,11 @@
 
 <div class="row">
     <div class="cp-slideshow">
-            <div style="display: inline-block;"><img src="images/slider-tapas-05.jpg" ></div>
-            <div><img src="images/slider-tapas-01.jpg" ></div>
-            <div><img src="images/slider-tapas-03.jpg" ></div>
-            <div><img src="images/slider-tapas-02.jpg" ></div>
-            <div><img src="images/slider-tapas-04.jpg" ></div>
+            <div style="display: inline-block;"><img src="/images/slider-tapas-05.jpg" ></div>
+            <div><img src="/images/slider-tapas-01.jpg" ></div>
+            <div><img src="/images/slider-tapas-03.jpg" ></div>
+            <div><img src="/images/slider-tapas-02.jpg" ></div>
+            <div><img src="/images/slider-tapas-04.jpg" ></div>
 	</div>
 </div>
 

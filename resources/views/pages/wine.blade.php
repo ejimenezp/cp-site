@@ -7,9 +7,9 @@
 
 <div class="row">
     <div class="cp-slideshow">
-            <div style="display: inline-block;"><img src="images/slider-wine-02.jpg" ></div>
-            <div><img src="images/slider-wine-01.jpg" ></div>
-            <div><img src="images/slider-events-01.jpg" ></div>
+            <div style="display: inline-block;"><img src="/images/slider-wine-02.jpg" ></div>
+            <div><img src="/images/slider-wine-01.jpg" ></div>
+            <div><img src="/images/slider-events-01.jpg" ></div>
 	</div>
 </div>
 
