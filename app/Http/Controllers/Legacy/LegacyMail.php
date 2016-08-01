@@ -10,25 +10,29 @@
 namespace App\Http\Controllers\Legacy;
 
 use Log;
+use Google_Client;
 
 class LegacyMail {
 
-	function getClient() {
+	static function getClient() {
 		$client = new Google_Client();
 		$client->setApplicationName('Sends offline mail');
 		$client->setScopes("https://www.googleapis.com/auth/gmail.send");
-		$client->setAuthConfigFile(__DIR__ . '/client_secret.json');
+		$client->setAuthConfigFile(storage_path(config('cookingpoint.gmail.client_secret')));
 		$client->setAccessType('offline');
+		$client->setApprovalPrompt('force');
 
 		// Load previously authorized credentials from a file.
-		$credentialsPath = '/home/cookingpoint/.credentials/gmail-php-client.json';
+		$credentialsPath = storage_path(config('cookingpoint.gmail.credentials'));
 		if (file_exists($credentialsPath))
 		{
+			// error_log($credentialsPath);
 			$accessToken = file_get_contents($credentialsPath);
 		}
 		else
 		{
 			// Request authorization from the user.
+			// error_log( "antes de createAuth");
 			$authUrl = $client->createAuthUrl();
 			printf("Open the following link in your browser:\n%s\n", $authUrl);
 			print 'Enter verification code: ';
@@ -45,6 +49,7 @@ class LegacyMail {
 			file_put_contents($credentialsPath, $accessToken);
 			printf("Credentials saved to %s\n", $credentialsPath);
 		}
+
 		$client->setAccessToken($accessToken);
 
 		// Refresh the token if it's expired.
@@ -113,15 +118,15 @@ class LegacyMail {
 		
 		try
 		{
-			// $client = self::getClient();
-			// $service = new Google_Service_Gmail($client);
+			$client = self::getClient();
+			$service = new Google_Service_Gmail($client);
 
-			// $encoded = rtrim(strtr(base64_encode($mime_message), '+/', '-_'), '=');
-			// $userId = 'me';
-			// $message = new Google_Service_Gmail_Message();
-			// $message->setRaw($encoded);
-			// $result = $service->users_messages->send($userId, $message);
-			Log::info($mime_message);
+			$encoded = rtrim(strtr(base64_encode($mime_message), '+/', '-_'), '=');
+			$userId = 'me';
+			$message = new Google_Service_Gmail_Message();
+			$message->setRaw($encoded);
+			$result = $service->users_messages->send($userId, $message);
+			// Log::info($mime_message);
 			if ($r['status'] == 'PE')
 			{
 				$details = 'emailText = '. $r[emailText];
@@ -174,15 +179,15 @@ class LegacyMail {
 
 		try
 		{
-			// $client = self::getClient();
-			// $service = new Google_Service_Gmail($client);
+			$client = self::getClient();
+			$service = new Google_Service_Gmail($client);
 
-			// $encoded = rtrim(strtr(base64_encode($mime_message), '+/', '-_'), '=');
-			// $userId = 'me';
-			// $message = new Google_Service_Gmail_Message();
-			// $message->setRaw($encoded);
-			// $result = $service->users_messages->send($userId, $message);
-			Log::info($mime_message);
+			$encoded = rtrim(strtr(base64_encode($mime_message), '+/', '-_'), '=');
+			$userId = 'me';
+			$message = new Google_Service_Gmail_Message();
+			$message->setRaw($encoded);
+			$result = $service->users_messages->send($userId, $message);
+			// Log::info($mime_message);
 							
 		} 
 		catch (Exception $e) 

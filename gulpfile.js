@@ -24,8 +24,6 @@ elixir(function(mix) {
     .browserify('admin-calendarevent.js')
     .browserify('tienda.js')
     .browserify('legacy/cp-scripts.js')
-    .task('fonts')
-
 });
 
 var conn = ftp.create( {
@@ -84,6 +82,8 @@ var pages_files = [
     'resources/views/pages/wine.blade.php',
     'resources/views/sidebar.blade.php',
     'resources/views/tpv/pay.blade.php',
+    'resources/views/tpv/callback.blade.php',
+    'storage/app/client_secret_testing.json',
     'storage/app/legacy/admin_notice_CR.html',
     'storage/app/legacy/admin_notice_PA.html',
     'storage/app/legacy/booking_details.html',
@@ -122,7 +122,4 @@ gulp.task( 'deploy-tienda', function () {
         .pipe( conn.dest( destFolder ) );
 } );
 
-gulp.task('fonts', function() {
-   gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/*.{ttf,woff,eot,svg,woff2}')
-   .pipe(gulp.dest('public/build/fonts/bootstrap'))
-});
+

@@ -289,7 +289,7 @@ switch (get_param('query'))
 				$template = "/status_PA";
 				break;
 		}				
- 		CP_mail_to_user($result, dirname( __FILE__ ) . $template);
+ 		CP_mail_to_user($result, $template);
  		echo "Sent";
 		break;
 

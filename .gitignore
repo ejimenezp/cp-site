@@ -29,6 +29,7 @@
 /storage/*
 !/storage/app
 /storage/app/*
+!/storage/app/*json
 !/storage/app/legacy
 /tests
 /vendor
