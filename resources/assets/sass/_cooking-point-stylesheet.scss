@@ -177,4 +177,13 @@ p {
 	.ui-datepicker-current-day {
 		background-color: $navbar-default-link-hover-bg;
 	}
+
+	.ui-state-disabled {
+		color: #959595;
+	}
+
+	.ui-state-hover { 
+		background-color: $navbar-default-link-hover-bg; 
+	}
+
 }

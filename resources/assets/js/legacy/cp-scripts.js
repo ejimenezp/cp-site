@@ -11,11 +11,15 @@ jQuery(document).ready(function($) {
 		minDate: 0,
 		altFormat: "yy-mm-dd",
 		altField: "#actDateName",
-		// beforeShowDay: function(date) {
-		// 	var day = date.getDay();
-		// 	// If day == 0 then it is Sunday
-		// 	if (day == 0) { return [false,"", 'No class on Sundays'] ; } 
-	 //        }
+		beforeShowDay: function(date) {
+			var day = date.getDay();
+			// If day == 0 then it is Sunday
+			if (day == 0) { 
+				return [false,'', 'No class on Sundays']
+			} else {
+				return [true, '', '']
+			}
+	    }
 	 });
 
 	jQuery.extend(jQuery.datepicker,{_checkOffset: function(inst, offset, isFixed){offset.top = offset.top+10; return offset;}});
