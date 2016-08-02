@@ -35,7 +35,6 @@
 							<select id="bookingactivity" name="r[activity]" class="cp-full-width" >
 		<?php	
 			$acts = App\Http\Controllers\Legacy\LegacyModel::retrieve_activities(FALSE);
-			Log::info($acts);
 			foreach ( $acts as $a ) {
 				echo '<option value="' . get_object_vars($a) ['shortcode'] . '">' . get_object_vars($a) ['activity'] . '</option>';
 			}
