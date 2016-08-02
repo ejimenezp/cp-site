@@ -13,6 +13,7 @@ function getClient() {
 	$client->setScopes("https://www.googleapis.com/auth/gmail.send");
 	$client->setAuthConfigFile('../../../storage/app/client_secret_testing.json');
 	$client->setAccessType('offline');
+	$client->setApprovalPrompt('force');
 
 	// Load previously authorized credentials from a file.
 	$credentialsPath = '../../../storage/app/gmail_api_credentials_testing.json';

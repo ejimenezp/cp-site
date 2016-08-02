@@ -12,6 +12,7 @@
 
 use App\Http\Controllers\RedsysAPI;
 use App\Http\Controllers\Legacy\LegacyModel;
+use App\Http\Controllers\Legacy\LegacyMail;
 
 $Secret = config('cookingpoint.redsys.firma');
 
@@ -61,7 +62,7 @@ if ($Ds_Response < 100)
 {
 	// update bookings table
 	LegacyModel::update_booking_after_tpv($Ds_MerchantData, $Ds_Order, $Ds_Response, $tpvDate);
-	$reserva = retrieve_booking($Ds_MerchantData);
+	$reserva = LegacyModel::retrieve_booking($Ds_MerchantData);
 	LegacyMail::mail_to_user($reserva, "legacy/status_PA");
  	$admin_mail_subject = "$reserva[activity] on $reserva[activityDate] for $reserva[numAdults]+$reserva[numChildren]";
  	LegacyMail::mail_to_admin($reserva, 'Payment', 'eduardo@cookingpoint.es', $admin_mail_subject, "legacy/admin_notice_PA.html");

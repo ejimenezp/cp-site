@@ -307,7 +307,6 @@ class LegacyModel {
 					'request',
 					'',
 					'$localDateTime')";
-			error_log($sqlString);
 			if(!$result = DB::statement($sqlString)) self::log_and_die($sqlString);				
 		}
 		else
@@ -324,7 +323,7 @@ class LegacyModel {
 			ds_last_update)
 			VALUES (
 			'$order',
-			'{$selectResult->fetch_object()->ds_description}',
+			'{$selectResult[0]->ds_description}',
 			'$data',
 			$amount,
 			'$response',
