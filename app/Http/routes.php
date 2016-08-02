@@ -20,6 +20,7 @@ Route::get('/', function () { return view('pages.home', ['page' => 'home']); });
 Route::get('/bookings', 'Legacy\LegacyController@cp_bookings_plugin');
 Route::get('/bookings/{hash}', 'Legacy\LegacyController@cp_bookings_plugin');
 Route::post('/bookings/{hash}', 'Legacy\LegacyController@cp_bookings_plugin');
+Route::get('/bookings/{hash}/{tpvresult}', 'Legacy\LegacyController@cp_bookings_plugin');
 Route::get('/classes', function () { return view('pages.classes'); });
 Route::get('/classes-paella-cooking-madrid-spain', function () { return view('pages.paella'); });
 Route::get('/classes-spanish-tapas-madrid-spain', function () { return view('pages.tapas'); });

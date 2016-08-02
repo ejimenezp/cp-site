@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Log;
 
 class LegacyController extends Controller
 {
@@ -18,7 +19,7 @@ class LegacyController extends Controller
 		return $var;
 	}
 
-	public function cp_bookings_plugin(Request $request, $hash ='')
+	public function cp_bookings_plugin(Request $request, $hash ='', $tpvresult)
 	{
 		
 		 $this->_REQUEST = $request;
@@ -59,6 +60,7 @@ class LegacyController extends Controller
 	 			else 
 	 			{
 	 				// echo 'ERROR: it seems that booking Id is not valid. Please contact info@cookingpoint.es';
+	 				Log::info("hash es=$hash");
 	 				return view('legacy.filledform')->with('reserva', null)->with('status', 'WRONG_ID');
 
 	 			}
@@ -66,7 +68,7 @@ class LegacyController extends Controller
 	 		else // caso normal, reserva ya almacenada y solo consultar estado
 	 		{
 				// echo '<h1>Bookings</h1>';
-				$tpvResult = $this->get_param('tpv');
+				// $tpvResult = $this->get_param('tpv');
 	 			// switch ($tpvResult) {
 	 				// case 'OK' :
 	 				// 	echo '<div class="box" style="background-color:YellowGreen;color:White">Payment received. Thank you!</div>';
@@ -81,7 +83,7 @@ class LegacyController extends Controller
 	 							
 	 			// show_booking_details($reserva);
 	 			// show_booking_status($reserva);
-					return view('legacy.filledform')->with('reserva', $reserva)->with('status', $tpvResult);
+					return view('legacy.filledform')->with('reserva', $reserva)->with('status', $tpvresult);
 	 			
 	 		}
 	  	}

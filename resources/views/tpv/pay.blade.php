@@ -29,7 +29,7 @@
 	use App\Http\Controllers\RedsysAPI;
 	use App\Http\Controllers\Legacy\LegacyModel;
 
-	$Secret = config('cooking-point.redsys.firma');
+	$Secret = config('cookingpoint.redsys.firma');
 
 	$Ds_Merchant_ProductDescription = LegacyModel::activity_by_shortcode ( $reserva ['activity'] ) . " on {$reserva['activityDate']} for {$reserva['numAdults']} adults";
 	if ($reserva ['numChildren'] > 0) {
@@ -40,12 +40,12 @@
 	$Ds_Merchant_Amount = $reserva['price'] * 100;
 	$Ds_Merchant_Currency = '978';
 	$Ds_Merchant_Order = random_order();
-	$Ds_Merchant_MerchantURL = config('cooking-point.redsys.merchanturl');
-	$Ds_Merchant_UrlOK = env('APP_URL' ,'http://cookingpoint.es'). "/bookings/" . $reserva ['hash'] . '&tpv=OK';
-	$Ds_Merchant_UrlKO = env('APP_URL' ,'http://cookingpoint.es'). "/bookings/" . $reserva ['hash'] . '&tpv=KO';
-	$Ds_Merchant_MerchantName = config('cooking-point.redsys.nombrecomercio');
+	$Ds_Merchant_MerchantURL = config('cookingpoint.redsys.merchanturl');
+	$Ds_Merchant_UrlOK = env('APP_URL' ,'http://cookingpoint.es'). "/bookings/" . $reserva ['hash'] . '/OK';
+	$Ds_Merchant_UrlKO = env('APP_URL' ,'http://cookingpoint.es'). "/bookings/" . $reserva ['hash'] . '/KO';
+	$Ds_Merchant_MerchantName = config('cookingpoint.redsys.nombrecomercio');
 	$Ds_Merchant_ConsumerLanguage = '002';
-	$Ds_Merchant_MerchantCode = config('cooking-point.redsys.fuc');;
+	$Ds_Merchant_MerchantCode = config('cookingpoint.redsys.fuc');;
 	$Ds_Merchant_Terminal = '001';
 	$Ds_Merchant_MerchantData = $reserva['hash'];
 	$Ds_Merchant_TransactionType = '0';
@@ -72,7 +72,6 @@
 	$myObj->setParameter("DS_MERCHANT_MERCHANTDATA", $Ds_Merchant_MerchantData);
 	$myObj->setParameter("DS_MERCHANT_AUTHORISATIONCODE", $Ds_Merchant_AuthorisationCode);
 
-	var_dump($myObj);
 
 	$params = $myObj->createMerchantParameters();
 	$signature = $myObj->createMerchantSignature($Secret);
@@ -84,7 +83,7 @@
 	?>  
 
 
-	<form name="TPVFORM" method="post" action=" {{ config('cooking-point.redsys.url') }}">
+	<form name="TPVFORM" method="post" action=" {{ config('cookingpoint.redsys.url') }}">
 
 		<input type="hidden" name="Ds_SignatureVersion" value="HMAC_SHA256_V1" />
 		<input type="hidden" name="Ds_MerchantParameters" value="{{ $params }}" />
@@ -95,7 +94,7 @@
 </body>
 
 <script>
-   // document.TPVFORM.submit();
+   document.TPVFORM.submit();
 </script>
 
 </html>
