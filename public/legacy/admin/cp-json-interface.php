@@ -197,7 +197,7 @@ function deal_with_webhook($booking)
 		'EMAIL',
 		'Recipient: {$_POST['recipient']}. Status: {$_POST['event']}')";
 		
-		error_log ("EMAIL: Recipient: {$_POST['recipient']}. Status: {$_POST['event']}");
+		// error_log ("EMAIL: Recipient: {$_POST['recipient']}. Status: {$_POST['event']}");
 		
 		if(!$result = $db->query($sqlString))
 		{
@@ -289,7 +289,7 @@ switch (get_param('query'))
 				$template = "/status_PA";
 				break;
 		}	
-		error_log('json_interface: send_mail: el host en config es '. config('env.app_url'));
+		// error_log('json_interface: send_mail: el host en config es '. config('env.app_url'));
 
  		CP_mail_to_user($result, $template);
  		echo "Sent";
