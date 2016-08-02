@@ -18,7 +18,7 @@ class LegacyController extends Controller
 		return $var;
 	}
 
-	public function cp_bookings_plugin(Request $request, $hash ='', $tpvresult)
+	public function cp_bookings_plugin(Request $request, $hash ='', $tpvresult='')
 	{
 		
 		 $this->_REQUEST = $request;
