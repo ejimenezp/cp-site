@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Log;
 
 class LegacyController extends Controller
 {
@@ -60,7 +59,6 @@ class LegacyController extends Controller
 	 			else 
 	 			{
 	 				// echo 'ERROR: it seems that booking Id is not valid. Please contact info@cookingpoint.es';
-	 				Log::info("hash es=$hash");
 	 				return view('legacy.filledform')->with('reserva', null)->with('status', 'WRONG_ID');
 
 	 			}
