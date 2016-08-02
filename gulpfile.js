@@ -73,7 +73,6 @@ var pages_files = [
     'resources/views/legacy/filledform.blade.php',
     'resources/views/masterlayout.blade.php',
     'resources/views/pages/bookings.blade.php',
-    'resources/views/pages/classes.blade.php',
     'resources/views/pages/contact.blade.php',
     'resources/views/pages/events.blade.php',
     'resources/views/pages/faq.blade.php',
