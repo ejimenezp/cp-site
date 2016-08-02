@@ -24,5 +24,5 @@ To pay, go to [APP_URL/pay/CP_HASH]
 ---
 Cooking Point
 (+34) 910 115 154
-www.cookingpoint.es
+cookingpoint.es
 

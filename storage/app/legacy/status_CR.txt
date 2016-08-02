@@ -20,4 +20,4 @@ Status: CP_STATUS
 ---
 Cooking Point
 (+34) 910 115 154
-www.cookingpoint.es
+cookingpoint.es
