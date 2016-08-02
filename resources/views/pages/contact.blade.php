@@ -15,7 +15,7 @@
 	<h1>Contact</h1>
 	<p>Cooking Point is located in the Barrio de Huertas (or Barrio de las Letras, Letter's Quarter). An important place in history especially during the 16th-century Golden Age of Spanish Literature, Miguel de Cervantes and Lope de Vega both lived here. </p>
 
-	<p>This quarter is in the heart of Madrid, therfore our school is within walking distance of Madrid landmarks like Museo del Prado or Puerta del Sol. The closest metro station is Anton Martin (line 1, light blue).</p>
+	<p>This quarter is in the heart of Madrid and our school is within walking distance of Madrid landmarks like Museo del Prado or Puerta del Sol. The closest metro station is Anton Martin (line 1, light blue).</p>
 
 </div>
 

@@ -17,15 +17,15 @@
 	<div class="alert alert-danger">Wrong booking ID: it does not correspond to any booking</div>
 
 @elseif ($status == 'OK')
-	<h1>Your Bookings</h1>
+	<h1>Your Booking</h1>
 	<div class="alert alert-success">Payment received. Thank you!</div>
 
 @elseif ($status == 'KO')
-	<h1>Your Bookings</h1>
+	<h1>Your Booking</h1>
 	<div class="alert alert-danger">Sorry, it seems payment process did not finished properly. Please, try it again</div>
 
 @elseif ($status == 'PAID')
-	<h1>Your Bookings</h1>
+	<h1>Your Booking</h1>
 	<div class="alert alert-warning">Thank you, this booking was already paid</div>
 
 @elseif ($status == 'NEW')

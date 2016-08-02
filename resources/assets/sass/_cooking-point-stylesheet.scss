@@ -37,7 +37,7 @@ h1, .call-to-action {
 
 .vertical-center {
 		position: relative;
-		top: 40px;
+		top: 60px;
 		transform: translateY(-50%);
 }
 
@@ -50,6 +50,9 @@ h1, .call-to-action {
 .home-column {
 	overflow: hidden;
 	padding-bottom: 15px;
+}
+.home-logo {
+	margin-top: 15px;
 }
 
 .dropcap { 

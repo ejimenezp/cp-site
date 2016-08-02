@@ -41,7 +41,7 @@
     <div class="visible-xs">
       <div class="row ">   
           <div class="col-xs-3">
-            <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox75.png" /></a>
+            <a href="/"><img class="home-logo" alt="cooking point logo" src="/images/cookingpoint_logox75.png" /></a>
           </div> 
           <div class="col-xs-9">
             <a class="text-right" data-toggle="collapse" data-target="#navbar" href="#">
@@ -87,7 +87,7 @@
     <div class="visible-sm visible-md visible-lg">
       <div class="row no-gutter">   
           <div class="col-sm-1">
-            <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox113.png" /></a>
+            <a href="/"><img class="home-logo" alt="cooking point logo" src="/images/cookingpoint_logox113.png" /></a>
           </div> 
           <div class="col-sm-11">
             <ul class="vertical-center nav navbar-nav">
