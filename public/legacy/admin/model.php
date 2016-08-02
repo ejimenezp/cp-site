@@ -8,7 +8,62 @@ ini_set("error_log", dirname ( __FILE__ ) . '/cp_error.log');
 error_reporting ( E_ALL ^ E_NOTICE );
 
 
-$db = new mysqli('localhost','root','', 'CP101');
+
+
+function configfile($file)
+{
+
+	// superseed functions to remove dependencies during include;
+	if (!function_exists(env))
+	{
+		function env($a, $b) {return $b;}		
+	}
+	if (!function_exists(database_path))
+	{
+		function database_path($a) {return null;}	
+	}
+	return (include $file);
+}
+
+function db($path, $default = null)
+{
+	$array = configfile('../../../config/database.php');
+
+	$path = 'connections.mysql.' . $path;
+
+    if (!empty($path)) {
+        $keys = explode('.', $path);
+
+        foreach ($keys as $key) {
+            if (isset($array[$key])) {
+                $array = $array[$key];
+            } else {
+                return $default;
+            }
+    	}
+	}
+    return $array;
+}
+function config($path, $default = null)
+{
+	$array = configfile('../../../config/cookingpoint.php');
+
+    if (!empty($path)) {
+        $keys = explode('.', $path);
+
+        foreach ($keys as $key) {
+            if (isset($array[$key])) {
+                $array = $array[$key];
+            } else {
+                return $default;
+            }
+    	}
+	}
+    return $array;
+}
+
+// $db = new mysqli('localhost','root','', 'CP101');
+$db = new mysqli(db('host'), db('username'), db('password'), db('database'));
 $db->set_charset("utf8");
 
 
@@ -89,7 +144,7 @@ function set_booking_data($r, $filename)
 	$html = str_replace('CP_FOODRESTRICTIONS', nl2br(stripslashes($r[foodRestrictions])), $html);
 	$html = str_replace('CP_COMMENTS', nl2br(stripslashes($r[comments])), $html);
 	$html = str_replace('CP_RANDOM', rand(), $html);
-	$html = str_replace('APP_URL', 'http://cookingpoint.es', $html);
+	$html = str_replace('APP_URL', 'http://bs2.cookingpoint.es', $html);
 	
 	return $html;
 	

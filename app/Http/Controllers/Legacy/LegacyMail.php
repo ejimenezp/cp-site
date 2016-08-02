@@ -11,6 +11,8 @@ namespace App\Http\Controllers\Legacy;
 
 use Log;
 use Google_Client;
+use Google_Service_Gmail;
+use Google_Service_Gmail_Message;
 
 class LegacyMail {
 
@@ -46,7 +48,7 @@ class LegacyMail {
 			{
 				mkdir(dirname($credentialsPath), 0700, true);
 			}
-			file_put_contents($credentialsPath, $accessToken);
+			file_put_contents($credentialsPath, json_encode($accessToken));
 			printf("Credentials saved to %s\n", $credentialsPath);
 		}
 
@@ -56,7 +58,7 @@ class LegacyMail {
 		if ($client->isAccessTokenExpired())
 		{
 			$client->refreshToken($client->getRefreshToken());
-			file_put_contents($credentialsPath, $client->getAccessToken());
+			file_put_contents($credentialsPath, json_encode($client->getAccessToken()));
 		}
 		return $client;
 	}

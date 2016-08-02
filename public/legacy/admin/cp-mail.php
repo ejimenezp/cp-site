@@ -11,11 +11,11 @@ function getClient() {
 	$client = new Google_Client();
 	$client->setApplicationName('Sends offline mail');
 	$client->setScopes("https://www.googleapis.com/auth/gmail.send");
-	$client->setAuthConfigFile('../../storage/app/client_secret_testing.json');
+	$client->setAuthConfigFile('../../../storage/app/client_secret_testing.json');
 	$client->setAccessType('offline');
 
 	// Load previously authorized credentials from a file.
-	$credentialsPath = '../../storage/app/gmail-php-client-testing.json';
+	$credentialsPath = '../../../storage/app/gmail_api_credentials_testing.json';
 	if (file_exists($credentialsPath))
 	{
 		// error_log($credentialsPath);
@@ -71,8 +71,8 @@ function CP_mail_to_user($r, $mail_template)
 	}
 	
 	
-	$html_body = set_booking_data($r, "../../storage/app" . $mail_template . ".html");
-	$txt_body = set_booking_data($r, "../../storage/app". $mail_template . ".txt");
+	$html_body = set_booking_data($r, "../../../storage/app/legacy" . $mail_template . ".html");
+	$txt_body = set_booking_data($r, "../../../storage/app/legacy". $mail_template . ".txt");
 	
 	// localhost version
 	// error_log("mail sent to $r[email]. Text:");
@@ -141,7 +141,7 @@ function CP_mail_to_user($r, $mail_template)
 function CP_mail_to_admin($r, $from_string, $to_string, $subject_string, $mail_template)
 {
 
-	$mail_body = set_booking_data($r, "../../storage/app" . $mail_template);
+	$mail_body = set_booking_data($r, "../../../storage/app/legacy" . $mail_template);
 
 	// localhost version
 	//error_log("mail sent to $r[email]. Text:");

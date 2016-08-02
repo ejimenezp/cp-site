@@ -27,7 +27,7 @@ Route::get('/contact', function () { return view('pages.contact', ['page' => 'co
 Route::get('/faq', function () { return view('pages.faq'); });
 Route::get('/gallery', function () { return view('pages.gallery'); });
 Route::get('/pay/{hash}', 'TPVController@pay');
-Route::get('/callback/{hash}', 'TPVController@callback');
+Route::post('/callback', 'TPVController@callback');
 Route::get('/private-cooking-events-madrid-spain', function () { return view('pages.events'); });
 Route::get('/school-madrid-spain', function () { return view('pages.school'); });
 Route::get('/wine-tasting-madrid-spain', function () { return view('pages.wine'); });

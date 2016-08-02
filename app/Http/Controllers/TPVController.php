@@ -35,8 +35,11 @@ class TPVController extends Controller
 
     }
 
-    public function callback()
+    public function callback(Request $request)
     {
-
+    	$version = $request->input('Ds_SignatureVersion');
+    	$params = $request->input('Ds_MerchantParameters');
+    	$signatureRecibida = $request->input('Ds_Signature');
+    	return view('tpv.callback')->with('version', $version)->with('params', $params)->with('signatureRecibida', $signatureRecibida);
     }
 }

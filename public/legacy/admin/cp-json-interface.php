@@ -288,7 +288,9 @@ switch (get_param('query'))
 			case 'PA':
 				$template = "/status_PA";
 				break;
-		}				
+		}	
+		error_log('json_interface: send_mail: el host en config es '. config('env.app_url'));
+
  		CP_mail_to_user($result, $template);
  		echo "Sent";
 		break;

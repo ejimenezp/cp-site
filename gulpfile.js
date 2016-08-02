@@ -56,7 +56,7 @@ var pages_files = [
     'app/Http/Controllers/RedsysAPI.php',
     'app/Http/Controllers/TPVController.php',
     'app/Http/routes.php',
-    'config/cooking-point.php',
+    'config/cookingpoint.php',
     'public/build/css/app**css',
     'public/build/rev-manifest.json',
     'public/images/**jpg',

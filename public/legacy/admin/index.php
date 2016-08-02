@@ -119,7 +119,7 @@ $(document).ready(function() {
 <h3>Bookings Admin</h3>
 
 		<table id="admin_form_button" class="cp-full-width"><tr>
-			 <td style="margin:auto"><button class="myButton" onclick="location.href='cp-edit-booking.php'">New Booking</button></td>
+			 <td style="margin:auto"><button class="myButton" onclick="location.href='/legacy/admin/cp-edit-booking.php'">New Booking</button></td>
 
 
     				<table id="example" class="table table-bordered dt-responsive" cellspacing="0" width="100%">

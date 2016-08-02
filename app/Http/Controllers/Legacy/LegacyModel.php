@@ -85,7 +85,7 @@ class LegacyModel {
 		$html = str_replace('CP_FOODRESTRICTIONS', nl2br(stripslashes($r['foodRestrictions'])), $html);
 		$html = str_replace('CP_COMMENTS', nl2br(stripslashes($r['comments'])), $html);
 		$html = str_replace('CP_RANDOM', rand(), $html);
-		$html = str_replace('APP_URL', env('APP_URL','http://cookingpoint.es'), $html);
+		$html = str_replace('APP_URL', config('cookingpoint.env.app_url'), $html);
 		
 		return $html;
 		
