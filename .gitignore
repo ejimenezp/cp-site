@@ -10,6 +10,9 @@
 !/app/Http/Controllers/*php
 /app/Http/Controllers/Controller.php
 !/app/Http/Controllers/Legacy
+!/app/Http/Middleware
+/app/Http/Middleware/*
+!/app/Http/Middleware/VerifyCsrfToken.php
 /artisan
 /bootstrap
 /config

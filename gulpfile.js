@@ -55,6 +55,7 @@ var pages_files = [
     'app/Http/Controllers/Legacy/LegacyModel.php',
     'app/Http/Controllers/RedsysAPI.php',
     'app/Http/Controllers/TPVController.php',
+    'app/Http/Middleware/VerifyCsrfToken.php',
     'app/Http/routes.php',
     'config/cookingpoint.php',
     'public/build/css/app**css',
