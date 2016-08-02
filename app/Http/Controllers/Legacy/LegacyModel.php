@@ -330,7 +330,7 @@ class LegacyModel {
 			'$authCode',
 			'{$timeStamp->format('Y-m-d H:i:s')}')";
 			
-			error_log($sqlString);
+			// error_log($sqlString);
 			if(!$result = DB::statement($sqlString)) self::log_and_die($sqlString);
 		}
 	}
