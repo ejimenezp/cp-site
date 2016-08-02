@@ -67,6 +67,8 @@ var pages_files = [
     'public/favicon.ico',
     'public/favicon-test.ico',
     'public/legacy/admin/*',
+    'resources/views/errors/404.blade.php',
+    'resources/views/errors/503.blade.php',
     'resources/views/legacy/emptyform.blade.php',
     'resources/views/legacy/filledform.blade.php',
     'resources/views/masterlayout.blade.php',

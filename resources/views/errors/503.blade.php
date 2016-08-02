@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Be right back.</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <title>On Maintenance Mode</title>
 
         <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
 
             .container {
+                font-family: sans-serif;
                 text-align: center;
-                display: table-cell;
+                /*display: table-cell;*/
                 vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
             }
 
             .title {
                 font-size: 72px;
                 margin-bottom: 40px;
+                margin-top: 40px;
+            }
+
+            p {
+                font-size: xx-large;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="content">
-                <div class="title">Be right back.</div>
-            </div>
+            <a href="/"><img alt="cooking point logo" src="/images/cookingpoint_logox113.png" /></a>
+            <div class="title">Temporarily Unavailable</div>
+            <p>Please, come back in 10 minutes.</p>
         </div>
     </body>
 </html>
