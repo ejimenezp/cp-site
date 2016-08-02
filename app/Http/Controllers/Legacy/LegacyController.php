@@ -21,9 +21,14 @@ class LegacyController extends Controller
 	public function cp_bookings_plugin(Request $request, $hash ='', $tpvresult='')
 	{
 		
-		 $this->_REQUEST = $request;
+		$this->_REQUEST = $request;
 
-		 // $hash = $this->get_param('hash');
+		// backwards compatibility with /bookings?booking={hash}
+		$booking = $this->get_param('booking');
+		if (empty($hash) && $booking) {
+			$hash = $booking;
+		}
+
 	 	if (!empty($hash))
 	 	{
 	 		$reserva = LegacyModel::retrieve_booking($hash);

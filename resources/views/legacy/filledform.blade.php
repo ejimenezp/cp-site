@@ -9,32 +9,32 @@
 	<div class="col-sm-12">
 
 @if ($status == 'ERROR')
-	<h1>Legacy Bookings</h1>
+	<h1>Bookings</h1>
 	<div class="alert alert-danger">Unexpected Error: Please try later or contact info@cookingpoint.es</div>
 
 @elseif ($status == 'WRONG_ID')
-	<h1>Legacy Bookings</h1>
+	<h1>Your Booking</h1>
 	<div class="alert alert-danger">Wrong booking ID: it does not correspond to any booking</div>
 
 @elseif ($status == 'OK')
-	<h1>Legacy Bookings</h1>
+	<h1>Your Bookings</h1>
 	<div class="alert alert-success">Payment received. Thank you!</div>
 
 @elseif ($status == 'KO')
-	<h1>Legacy Bookings</h1>
+	<h1>Your Bookings</h1>
 	<div class="alert alert-danger">Sorry, it seems payment process did not finished properly. Please, try it again</div>
 
 @elseif ($status == 'PAID')
-	<h1>Legacy Bookings</h1>
+	<h1>Your Bookings</h1>
 	<div class="alert alert-warning">Thank you, this booking was already paid</div>
 
 @elseif ($status == 'NEW')
-	<h1>New Booking</h1>
+	<h1>Your Booking</h1>
 	<div class="alert alert-success">Your inqury has been received. Thank you!</div>
 	<p>We'll get back to you as soon as we check the availabily. Please, check your email now to confirm you have received an automated email from us. If you can't see any, please check your spam/junk folder or write us to <a href="mailto:info@cookingpoint.es">info@cookingpoint.es</a> </p>
 
 @elseif ($status == '')
-	<h1>Legacy Bookings</h1>
+	<h1>Your Booking</h1>
 @endif
 
 <?php
