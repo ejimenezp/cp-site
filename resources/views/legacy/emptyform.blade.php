@@ -7,7 +7,7 @@
 
 <div class="row">
 	<div class="col-sm-12">
-		<h1>Legacy Bookings</h1>
+		<h1>Bookings</h1>
 
 		<p>Please, fill in the form to inquire about a class.   <small>(<span style="color:red">*</span> = mandatory)</small></p>
 
