@@ -11,12 +11,12 @@ function getClient() {
 	$client = new Google_Client();
 	$client->setApplicationName('Sends offline mail');
 	$client->setScopes("https://www.googleapis.com/auth/gmail.send");
-	$client->setAuthConfigFile('../../../storage/app/client_secret_testing.json');
+	$client->setAuthConfigFile('../../../storage/' . config('gmail.client_secret'));
 	$client->setAccessType('offline');
 	$client->setApprovalPrompt('force');
 
 	// Load previously authorized credentials from a file.
-	$credentialsPath = '../../../storage/app/gmail_api_credentials_testing.json';
+	$credentialsPath = '../../../storage/' . config('gmail.credentials');
 	if (file_exists($credentialsPath))
 	{
 		// error_log($credentialsPath);

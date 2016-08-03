@@ -144,7 +144,7 @@ function set_booking_data($r, $filename)
 	$html = str_replace('CP_FOODRESTRICTIONS', nl2br(stripslashes($r[foodRestrictions])), $html);
 	$html = str_replace('CP_COMMENTS', nl2br(stripslashes($r[comments])), $html);
 	$html = str_replace('CP_RANDOM', rand(), $html);
-	$html = str_replace('APP_URL', 'http://bs2.cookingpoint.es', $html);
+	$html = str_replace('APP_URL', config('env.app_url'), $html);
 	
 	return $html;
 	
