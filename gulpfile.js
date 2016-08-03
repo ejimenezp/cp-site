@@ -59,6 +59,7 @@ var pages_files = [
     'app/Http/routes.php',
     'config/cookingpoint.php',
     'public/.htaccess',
+    'public/index.php',
     'public/build/css/app**css',
     'public/build/rev-manifest.json',
     'public/images/**jpg',

@@ -21,6 +21,8 @@
 /node_modules
 /phpunit.xml
 /public/*
+!/public/.htaccess
+!/public/index.php
 !/public/images
 !/public/legacy
 !/public/legacy/admin/*
