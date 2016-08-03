@@ -88,6 +88,7 @@ var pages_files = [
     'resources/views/tpv/pay.blade.php',
     'resources/views/tpv/callback.blade.php',
     'storage/app/client_secret_testing.json',
+    'storage/app/client_secret_production.json',
     'storage/app/legacy/admin_notice_CR.html',
     'storage/app/legacy/admin_notice_PA.html',
     'storage/app/legacy/booking_details.html',
