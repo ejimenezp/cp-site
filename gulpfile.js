@@ -58,6 +58,7 @@ var pages_files = [
     'app/Http/Middleware/VerifyCsrfToken.php',
     'app/Http/routes.php',
     'config/cookingpoint.php',
+    'public/.htaccess',
     'public/build/css/app**css',
     'public/build/rev-manifest.json',
     'public/images/**jpg',
