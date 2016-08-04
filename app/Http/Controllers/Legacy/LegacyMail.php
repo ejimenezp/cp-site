@@ -26,6 +26,8 @@ class LegacyMail {
 
 		// Load previously authorized credentials from a file.
 		$credentialsPath = storage_path(config('cookingpoint.gmail.credentials'));
+		$refreshPath = storage_path(config('cookingpoint.gmail.refresh'));
+
 		if (file_exists($credentialsPath))
 		{
 			// error_log($credentialsPath);
@@ -50,6 +52,17 @@ class LegacyMail {
 			}
 			file_put_contents($credentialsPath, json_encode($accessToken));
 			printf("Credentials saved to %s\n", $credentialsPath);
+
+			// store refresh token if included 
+			$refresh = $accessToken['refresh_token'];
+			if (isset($refresh)) {
+				if(!file_exists(dirname($refreshPath))) {
+					mkdir(dirname($refreshPath), 0700, true);
+				}
+				file_put_contents($refreshPath, $refresh);
+				printf("Refresh token (%s) saved to %s\n", $refresh, $refreshPath);
+			}
+
 		}
 
 		$client->setAccessToken($accessToken);
@@ -57,7 +70,12 @@ class LegacyMail {
 		// Refresh the token if it's expired.
 		if ($client->isAccessTokenExpired())
 		{
-			$client->refreshToken($client->getRefreshToken());
+			if (file_exists($refreshPath))
+			{
+				$storedRefreshToken = file_get_contents($refreshPath);
+			}
+
+			$client->fetchAccessTokenWithRefreshToken($storedRefreshToken);
 			file_put_contents($credentialsPath, json_encode($client->getAccessToken()));
 		}
 		return $client;
