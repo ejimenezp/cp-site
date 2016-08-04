@@ -47,7 +47,7 @@
 </div>
 
 <div class="row call-to-action">
-	<div class="col-xs-12 col-sm-1 vertical-center text-center">
+	<div class="col-xs-12 col-sm-1 text-center">
  		<i class="brand-red fa fa-4x fa-info-circle"></i><br/>
 	</div>
 	<div class="col-xs-3 col-sm-2 what">
