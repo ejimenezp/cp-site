@@ -28,18 +28,18 @@ $decodec = $myObj->decodeMerchantParameters($params);
 $Ds_Date = $myObj->getParameter('Ds_Date');
 $Ds_Hour = $myObj->getParameter('Ds_Hour');
 $Ds_Amount = $myObj->getParameter('Ds_Amount');
-$Ds_Currency = $myObj->getParameter('Ds_Currency');
+// $Ds_Currency = $myObj->getParameter('Ds_Currency');
 $Ds_Order = $myObj->getParameter('Ds_Order');
-$Ds_MerchantCode = $myObj->getParameter('Ds_MerchantCode');
-$Ds_Terminal = $myObj->getParameter('Ds_Terminal');
+// $Ds_MerchantCode = $myObj->getParameter('Ds_MerchantCode');
+// $Ds_Terminal = $myObj->getParameter('Ds_Terminal');
 $Ds_Response = $myObj->getParameter('Ds_Response');
-$Ds_TransactionType = $myObj->getParameter('Ds_TransactionType');
-$Ds_SecurePayment = $myObj->getParameter('Ds_SecurePayment');
+// $Ds_TransactionType = $myObj->getParameter('Ds_TransactionType');
+// $Ds_SecurePayment = $myObj->getParameter('Ds_SecurePayment');
 $Ds_MerchantData = $myObj->getParameter('Ds_MerchantData');
-$Ds_Card_Country = $myObj->getParameter('Ds_Card_Country');
+// $Ds_Card_Country = $myObj->getParameter('Ds_Card_Country');
 $Ds_AuthorisationCode = $myObj->getParameter('Ds_AuthorisationCode');
-$Ds_ConsumerLanguage = $myObj->getParameter('Ds_ConsumerLanguage');
-$Ds_Card_Type = $myObj->getParameter('Ds_Card_Type');
+// $Ds_ConsumerLanguage = $myObj->getParameter('Ds_ConsumerLanguage');
+// $Ds_Card_Type = $myObj->getParameter('Ds_Card_Type');
 
 
 
