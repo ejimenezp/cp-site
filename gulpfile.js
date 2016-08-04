@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var ftp = require( 'vinyl-ftp' );
 var git = require('gulp-git');
+var print = require('gulp-print');
 
 /*
  |--------------------------------------------------------------------------
@@ -112,6 +113,7 @@ gulp.task( 'deploy-pages', function () {
     return gulp.src( pages_files, { base: '.', buffer: false } )
         .pipe( conn.newer( destFolder ) ) // only upload newer files
         .pipe( conn.dest( destFolder ) );
+        // .pipe( print() );
 } );
 
 
