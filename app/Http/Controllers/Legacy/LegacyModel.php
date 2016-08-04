@@ -65,6 +65,11 @@ class LegacyModel {
 			case 'PA':
 				$status = "Paid";
 				break;
+			case 'DE':
+				$status = "Cancelled";
+				break;
+			default:
+				$status = "Contact Us";
 			}
 				
 		// build html from template
