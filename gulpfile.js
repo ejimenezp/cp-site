@@ -61,6 +61,7 @@ var pages_files = [
     'config/cookingpoint.php',
     'public/.htaccess',
     'public/index.php',
+    'public/sitemap.txt',
     'public/build/css/app**css',
     'public/build/rev-manifest.json',
     'public/images/**jpg',

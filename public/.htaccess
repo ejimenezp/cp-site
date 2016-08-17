@@ -1,3 +1,42 @@
+#redirects
+
+# bookings
+redirect 301 /en/bookings http://cookingpoint.es/bookings
+redirect 301 /calendar http://cookingpoint.es/bookings
+redirect 301 /en/calendar http://cookingpoint.es/bookings
+
+# contact
+redirect 301 /es/contacto http://cookingpoint.es/contact
+redirect 301 /es/donde-estamos http://cookingpoint.es/contact
+redirect 301 /en/where-we-are http://cookingpoint.es/contact
+redirect 301 /about-us http://cookingpoint.es/contact
+
+# tapas
+redirect 301 /activities/tapas-workshop http://cookingpoint.es/classes-spanish-tapas-madrid-spain
+redirect 301 /es/actividades/curso-tapas http://cookingpoint.es/classes-spanish-tapas-madrid-spain
+
+# paella
+redirect 301 /new/classes-paella-cooking-madrid http://cookingpoint.es/classes-paella-cooking-madrid-spain
+
+# faq
+redirect 301 /en/frequent-questions http://cookingpoint.es/faq
+redirect 301 /frequent-questions http://cookingpoint.es/faq
+
+# events
+redirect 301 /group-events http://cookingpoint.es/private-cooking-events-madrid-spain
+redirect 301 /eventos-empresa-cursos-cocina http://cookingpoint.es/private-cooking-events-madrid-spain
+
+# home
+redirect 301 /home http://cookingpoint.es
+redirect 301 /escuela-cocina-madrid http://cookingpoint.es
+redirect 301 /cursos-cocina-madrid http://cookingpoint.es
+redirect 301 /masterchef-takes-highest-cooking-fever-spain http://cookingpoint.es
+
+
+# RedirectMatch 301 ^/es/(.*)$ http://cookingpoint.es
+# RedirectMatch 301 ^/en/(.*)$ http://cookingpoint.es
+
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
