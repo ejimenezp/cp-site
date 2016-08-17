@@ -17,7 +17,7 @@ function getClient() {
 
 	// Load previously authorized credentials from a file.
 	$credentialsPath = '../../../storage/' . config('gmail.credentials');
-	$refreshPath = '../../../storage/' . config('cookingpoint.gmail.refresh');
+	$refreshPath = '../../../storage/' . config('gmail.refresh');
 
 
 	if (file_exists($credentialsPath))
