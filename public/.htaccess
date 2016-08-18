@@ -48,6 +48,10 @@ RedirectMatch 301 ^/en/(.*)$ http://cookingpoint.es
 
     RewriteEngine On
 
+    # Remove www from URL
+    RewriteCond %{HTTP_HOST} ^www.cookingpoint.es$ [NC]
+    RewriteRule ^(.*)$ http://cookingpoint.es/$1 [R=301,L]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
