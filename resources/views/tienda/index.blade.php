@@ -33,7 +33,7 @@
 				<td>{{ $ticket->linea3 ? $ticket->desc3->nombre :"" }}</td>
 				<td>{{ $ticket->linea4 ? "(more items)" :"" }}</td>
 
-				<td><button type="button" class="btn btn-primary btn-xs" onclick="location.href='/tienda/voidticket/{{ $ticket->id }}';">Void</button></td>
+				<td><button type="button" class="btn btn-primary btn-xs" onclick="location.href='/tienda/deleteticket/{{ $ticket->id }}';">Delete</button></td>
 			</tr> 
 	        @endforeach 
 		</tbody>

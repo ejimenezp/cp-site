@@ -24,7 +24,7 @@ class TicketsController extends Controller
     	return view('tienda.index')->with('tickets', $today);
     }
 
-    public function voidticket ($id)
+    public function deleteticket ($id)
     {
     	TiendaVentas::where('id', $id)->update(['anulado' => true]);
     	return redirect('tienda/tickets');

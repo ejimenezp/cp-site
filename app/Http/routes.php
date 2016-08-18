@@ -78,7 +78,7 @@ Route::delete('admin/json/calendarevent/{id}', 'JsonCalendarEventsController@del
 Route::get('tienda', 'TicketsController@front');
 Route::get('tienda/tickets', 'TicketsController@index');
 Route::post('tienda/addticket', 'TicketsController@addticket');
-Route::get('tienda/voidticket/{id}', 'TicketsController@voidticket');
+Route::get('tienda/deleteticket/{id}', 'TicketsController@deleteticket');
 
 /*
  * |--------------------------------------------------------------------------
