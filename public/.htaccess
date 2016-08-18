@@ -11,6 +11,9 @@ redirect 301 /es/donde-estamos http://cookingpoint.es/contact
 redirect 301 /en/where-we-are http://cookingpoint.es/contact
 redirect 301 /about-us http://cookingpoint.es/contact
 
+# gallery
+redirect 301 /en/gallery http://cookingpoint.es/gallery
+
 # tapas
 redirect 301 /activities/tapas-workshop http://cookingpoint.es/classes-spanish-tapas-madrid-spain
 redirect 301 /es/actividades/curso-tapas http://cookingpoint.es/classes-spanish-tapas-madrid-spain
@@ -30,11 +33,12 @@ redirect 301 /eventos-empresa-cursos-cocina http://cookingpoint.es/private-cooki
 redirect 301 /home http://cookingpoint.es
 redirect 301 /escuela-cocina-madrid http://cookingpoint.es
 redirect 301 /cursos-cocina-madrid http://cookingpoint.es
+redirect 301 /curso-de-cupcakes-madrid http://cookingpoint.es
 redirect 301 /masterchef-takes-highest-cooking-fever-spain http://cookingpoint.es
 
 
-# RedirectMatch 301 ^/es/(.*)$ http://cookingpoint.es
-# RedirectMatch 301 ^/en/(.*)$ http://cookingpoint.es
+RedirectMatch 301 ^/es/(.*)$ http://cookingpoint.es
+RedirectMatch 301 ^/en/(.*)$ http://cookingpoint.es
 
 
 <IfModule mod_rewrite.c>
