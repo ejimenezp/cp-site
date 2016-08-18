@@ -14,7 +14,7 @@
             <div><img src="/images/slider-home-01.jpg" ></div>
     </div>
     <h1 style="text-align: center;"><span style="color: #000000;"><strong>Wondering what to do in Madrid?</strong></span></h1>
-    <h1 style="text-align: center;"><span class="home-headline" style="color: #e42e28;">Enjoy a <strong><span style="color: #ef8401;">cooking class</span></strong> during your stay</span></h1>
+    <h1 style="text-align: center;"><span class="home-headline" style="color: #e42e28;">Enjoy a <strong><span style="color: #ef8401;">cooking class</span></strong> during your stay in Madrid</span></h1>
 </div>
 
 <div class="row text-center">
