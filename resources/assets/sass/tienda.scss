@@ -5,22 +5,39 @@
 	margin: 4px;
 }
 
+
+.screen {
+    font-size: 22px;
+}
+
 .ticket {
-    font-family: "Courier New";
-    font-size: 125%;
+    font-size: 12px;
 }
 
-@page { size:10cm 10cm; }
+.ticket_number {
+  text-align: right;
+}
 
-@media print {
-
-  body * {
-    visibility: hidden;
-  }
-  .ticket, .ticket * {
-    visibility: visible;
-    font-size: 10pt ;
-    orphans: 0;
-    widows: 0; 
+#screen_table, #items_table {
+  width: 90%;
+  margin: 0 auto;
+  tfoot {
+    font-weight: bold;
+    height: 50px;
+    background-color: gold;
   }
 }
+
+#screen_table {
+  margin-bottom: 50px;
+}
+
+#tax_table {
+  width: 80%;
+  margin: 0 auto;
+  td, th {
+    text-align: right;
+  }
+}
+
+

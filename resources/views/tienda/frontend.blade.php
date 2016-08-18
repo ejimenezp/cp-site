@@ -32,27 +32,52 @@
     		</div>
   			<div class="col-sm-6">
                 <h1>Ticket   <div class="btn btn-danger" id="boton-limpiar">Clean Ticket</div></h1>
-                <div class="ticket">
-                    <p>Cooking Point, S.L.<br/>
-                    C/ Moratín, 11<br/>
-                    28014 Madrid (SPAIN)<br/>
-                    NIF: B86615143<br/>
-                    ticket #: <span id="ticket_id">--</span> &nbsp Date: <span id="ticket_date"></span> 
-                    <br/>
-                    <br/>
-                    Product                 Price<br/>
-                    -----------------------------</p>
-                    <div id=articles></div>
-                    <p>
-                    -----------------------------<br/>
-                    Total €<span id=total>0</span></p>
-                    <p><br/>Value Added Tax (IVA)</p>
-                    <p>Base &nbsp Rate &nbsp Tax<br/>
-                    <span id="impuestos"></span></p>
-                    <p>Paid: <span id="forma_pago"></span></p>
+                <div class="screen">
+                    <table id="screen_table">
+                        <thead><tr><th>Product</th><th class="ticket_number">Price</th></tr></thead>
+                        <tbody><tr><td></td><td></td></tr></tbody>                        
+                        <tfoot><tr><td>Total (€)</td><td class="ticket_number"><span class="total">0</span></td></tr></tfoot>
+                    </table>
                 </div>
-                <div class="btn btn-lg btn-danger boton-pagar" data-pago="efectivo">Pay Cash</div>
-                <div class="btn btn-lg btn-danger boton-pagar" data-pago="tarjeta">Pay Card</div>
+
+                <div class="hidden">
+                    <div class="ticket" id="ticket_header">
+                        <p class="text-center">Cooking Point, S.L.<br/>
+                        C/ Moratín, 11<br/>
+                        28014 Madrid (SPAIN)<br/>
+                        NIF: B86615143<br/></p>
+                    </div>
+
+                    <div class="ticket" id="ticket_items">
+                        <p style="margin-bottom:0px"><br/><strong>Ticket #: <span id="ticket_id">--</span> &nbsp Date: <span id="ticket_date"></span></strong></p>
+                         
+                        <table id="items_table">
+                            <thead><tr><th>Product</th><th class="ticket_number">Price</th></tr></thead>
+                            <tbody><tr><td></td><td></td></tr></tbody>                        
+                            <tfoot><tr><td>Total (€)</td><td class="ticket_number"><span class="total">0</span></td></tr></tfoot>
+                        </table>
+                    </div>
+
+                    <div class="ticket" id="ticket_iva">
+                        <p style="margin-bottom:0px"><br/><strong>Value Added Tax (IVA)</strong></p>
+                        <table id="tax_table">
+                            <thead>
+                                <tr><th>Base (€)</th><th>Rate (%)</th><th>Tax (€)</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td></td><td></td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ticket" id="ticket_footer">
+                        <p class="text-center"><br/>Paid: <span id="forma_pago"></span></p>
+                        <p class="text-center">Thank You!!<br/><br/>.</p>
+                    </div>
+                </div>
+
+                <div class="btn btn-lg btn-danger boton-pagar" data-pago="cash">Pay Cash</div>
+                <div class="btn btn-lg btn-danger boton-pagar" data-pago="credit card">Pay Card</div>
                 <button type="button" class="btn btn-xs btn-secondary" onclick="location.href='/tienda/tickets';">Anular Ticket</button>
 
     		</div>   		

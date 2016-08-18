@@ -5,6 +5,8 @@ window.$ = window.jQuery = require('jquery');
 
 require('bootstrap-sass');
 require('jquery-serializejson');
+require('printThis');
+
 
 require('jquery-ui/datepicker');
 
@@ -46,7 +48,8 @@ $( document ).ready(function() {
     		rates[iva] = true
     	}
 
-    	articles = articles + $(this).data('nombre') + ' &nbsp ' + pvp +'<br/>'
+//    	articles = articles + '<tr><td>'+ $(this).data('nombre') + '</td><td>' + pvp +'</td></tr>'
+        $('#items_table > tbody:last, #screen_table > tbody:last').append('<tr><td>'+ $(this).data('nombre') + '</td><td class="ticket_number">' + pvp +'</td></tr>');
         ticket.total = ticket.total + Number(pvp)
 
     	var this_base = Number(pvp)/(1 + Number(iva)/100)
@@ -56,13 +59,17 @@ $( document ).ready(function() {
         ticket.bases[iva] = ticket.bases[iva] + this_base
         ticket.ivas[iva] = ticket.ivas[iva] + this_iva
 
+        // empty tax table before updating
+        $("#tax_table > tbody").empty();
+
         for (var i in ticket.bases) {
         	impuestos = impuestos + ticket.bases[i].toFixed(2) + ' &nbsp ' + i + '% &nbsp ' + ticket.ivas[i].toFixed(2) + '<br/>'
+            $('#tax_table > tbody:last').append('<tr><td>'+ ticket.bases[i].toFixed(2) + '</td><td>' + i + '%</td><td>' + ticket.ivas[i].toFixed(2) +'</td></tr>');
         }
 
-        $('#articles').html(articles)
-        $('#total').html(ticket.total.toFixed(2))
-        $('#impuestos').html(impuestos)
+//        $('.articles').html(articles)
+        $('.total').html(ticket.total.toFixed(2))
+        // $('#impuestos').html(impuestos)
 
         // rellenamos array para enviar a servidor
         ticket.articulos.push($(this).data('id'))
@@ -83,10 +90,12 @@ $( document ).ready(function() {
     	var impuestos = ""
     	ticket_pagado = false
 
+        $("#tax_table > tbody").empty();
+        $("#screen_table > tbody").empty();
+        $("#items_table > tbody").empty();
         $('#ticket_id').html("--")
-        $('#articles').html(articles)
         $('#total').html(total)
-        $('#impuestos').html(impuestos)
+
 	});
 
 
@@ -101,7 +110,8 @@ $( document ).ready(function() {
 				$('#ticket_id').html(result)
 			})
 	    	ticket_pagado = true
-            window.print()    	}
+            $("#ticket_header, #ticket_items, #ticket_iva, #ticket_footer").printThis()
+        }
     });
 
 

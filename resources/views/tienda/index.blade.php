@@ -40,7 +40,7 @@
 </table>
 <p></p>
 
-<button type="button" class="btn btn-primary" onclick="history.back();return true;">Back</button>
+<button type="button" class="btn btn-primary" onclick="location.href='/tienda'">Back</button>
 
 </div>
 @stop
