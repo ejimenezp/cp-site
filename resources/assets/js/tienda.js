@@ -49,7 +49,7 @@ $( document ).ready(function() {
     	}
 
 //    	articles = articles + '<tr><td>'+ $(this).data('nombre') + '</td><td>' + pvp +'</td></tr>'
-        $('#items_table > tbody:last, #screen_table > tbody:last').append('<tr><td>'+ $(this).data('nombre') + '</td><td class="ticket_number">' + pvp +'</td></tr>');
+        $('#items_table > tbody:last, #screen_table > tbody:last').append('<tr><td>'+ $(this).data('nombre') + '</td><td class="text-right">' + pvp +'</td></tr>');
         ticket.total = ticket.total + Number(pvp)
 
     	var this_base = Number(pvp)/(1 + Number(iva)/100)
@@ -110,7 +110,7 @@ $( document ).ready(function() {
 				$('#ticket_id').html(result)
 			})
 	    	ticket_pagado = true
-            $("#ticket_header, #ticket_items, #ticket_iva, #ticket_footer").printThis()
+            $("#receipt").printThis()
         }
     });
 

@@ -6,29 +6,23 @@
 }
 
 
-.screen {
-    font-size: 22px;
-}
 
-.ticket {
+#receipt {
     font-size: 12px;
 }
 
-.ticket_number {
-  text-align: right;
-}
 
 #screen_table, #items_table {
   width: 90%;
   margin: 0 auto;
-  tfoot {
+  tfoot td {
     font-weight: bold;
-    height: 50px;
-    background-color: gold;
+    height: 4em;
   }
 }
 
 #screen_table {
+  font-size: 22px;
   margin-bottom: 50px;
 }
 
