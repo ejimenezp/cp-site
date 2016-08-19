@@ -13,7 +13,6 @@
 	<div class="container">
         <div class="row">
          	<div class="col-sm-6">
-                <h1>Articles</h1>
 <?php
         $seccion = "";
         foreach ($articulos as $articulo) {

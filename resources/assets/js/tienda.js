@@ -94,7 +94,7 @@ $( document ).ready(function() {
         $("#screen_table > tbody").empty();
         $("#items_table > tbody").empty();
         $('#ticket_id').html("--")
-        $('#total').html(total)
+        $('.total').html(0)
 
 	});
 
